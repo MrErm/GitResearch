@@ -8,9 +8,27 @@
 # print(type(stringFromList))
 # print(stringFromList)
 
-str = "Привет"
-print(str.find('ве'))
+# str = "Привет"
 
-month = "январь, февраль, март, апрель"
+# print(str.ascii_letters)
 
-print(month.split(','))
+import string
+
+# print(string.ascii_letters)
+# print(string.digits)
+
+
+simbols = 'r4bp78fd'
+digits = []
+letters = []
+
+for c in simbols:
+    if (c in string.digits):
+        digits.append(c)
+
+    if (c in string.ascii_letters):
+        letters.append(c)
+    
+print(digits)  
+print(letters)
+

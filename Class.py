@@ -15,10 +15,22 @@
 # nik.company = "Yandex"
 # print(f"Работает в", nik.company)
 
-class Human():
-    def morning(self, hello):
-        print(hello)
 
-alex = Human()
-alex.morning("Доброе утро")
+
+class Rectangle:
+    def __init__(self, width, length):
+        self.width = width
+        self.lengh = length
+
+    def area(self):
+        return self.width * self.lengh
+
+    def perimeter(self):
+        return 2 * (self.lengh + self.width)
+    
+obj1 = Rectangle(5, 6)
+print(obj1.area())
+print(obj1.perimeter())
+
+
 
